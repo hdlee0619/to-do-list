@@ -1,0 +1,17 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  font-size: 55px;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+}
+
+.header-div__clock {
+  margin-left: 200px;
+}
+
+.header-div__weather {
+  margin-right: 200px;
+}

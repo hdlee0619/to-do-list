@@ -1,0 +1,72 @@
+main {
+  text-align: center;
+  color: white;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+input:not([type="submit"]):focus {
+  outline: none;
+  border-bottom: 2px solid white;
+  transition: border-color 0.3s ease-in-out;
+}
+.main-div__login {
+  margin: 65px 0 35px 0;
+  font-size: 45px;
+}
+.main-input__login {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.main-input__login::placeholder {
+  color: white;
+}
+
+h1 {
+  font-weight: 600;
+}
+.main-input__btn {
+  font-size: 35px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.main-input__btn:hover {
+  cursor: pointer;
+}
+
+.main-form__todo {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.main-form__todo::placeholder {
+  color: white;
+  transition: border-color 0.3s ease-in-out;
+}
+.main-div__todo-list {
+  display: flex;
+  justify-content: center;
+}
+#todo-list {
+  font-size: 30px;
+  width: 20vw;
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+#todo-list li button {
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+}

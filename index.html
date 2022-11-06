@@ -4,7 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To Do List</title>
   </head>
-  <body></body>
+  <body id="background">
+    <header class="header-div">
+      <div class="header-div__clock">
+        <h2 id="clock"></h2>
+      </div>
+      <div class="header-div__weather">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <div class="main-div__login">
+        <form class="hidden" id="login-form">
+          <input
+            class="main-input__login"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+          />
+          <input class="main-input__btn" type="submit" value="Log In" />
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+      </div>
+      <form id="todo-form">
+        <input
+          class="main-form__todo"
+          type="text"
+          placeholder="Write todo and Press."
+          required
+        />
+      </form>
+      <div class="main-div__todo-list">
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+    <footer class="footer__quote" id="quote">
+      <div class="footer-span__quote">
+        <span id="quote"></span>
+        <span id="author"></span>
+      </div>
+    </footer>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
 </html>
